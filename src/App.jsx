@@ -7,6 +7,7 @@ import Login from "./pages/auth/Login"
 import Signup from "./pages/auth/Signup"
 import Error from "./pages/error/Error"
 import NotFound from "./pages/error/NotFound"
+import PrivateExample from "./pages/PrivateExample";
 
 // components
 import Navbar from "./components/Navbar"
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/private-page-example" element={<PrivateExample />} />
 
         {/* error FE routes */}
         <Route path="/error" element={<Error />} />
