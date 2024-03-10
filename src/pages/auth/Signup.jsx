@@ -2,11 +2,9 @@ import { useState } from "react";
 
 function Signup() {
 
-  const [username, setUsername] = useState("")
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleUsernameChange = (e) => setUsername(e.target.value);
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handlePasswordChange = (e) => setPassword(e.target.value);
 
@@ -22,16 +20,6 @@ function Signup() {
       <h1>Formulario de Registro</h1>
     
       <form onSubmit={handleSignup}>
-        
-        <label>Nombre de Usuario:</label>
-        <input
-          type="text"
-          name="username"
-          value={username}
-          onChange={handleUsernameChange}
-        />
-
-        <br />
 
         <label>Correo Electronico:</label>
         <input

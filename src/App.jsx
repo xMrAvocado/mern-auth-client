@@ -15,7 +15,7 @@ import Navbar from "./components/Navbar"
 function App() {
 
   return (
-    <>
+    <div>
       <Navbar />
 
       <br />
@@ -31,7 +31,7 @@ function App() {
         <Route path="/error" element={<Error />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </>
+    </div>
   )
 }
 
