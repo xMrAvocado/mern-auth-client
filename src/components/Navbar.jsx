@@ -1,23 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const toggleStyles = (navInfo) => {
-    return navInfo.isActive === true ? activeStyles : inActiveStyles;
-  };
-
-  const activeStyles = {
-    textDecoration: "underline",
-  };
-
-  const inActiveStyles = {
-    textDecoration: "none",
-  };
 
   return (
     <nav>
-      <NavLink to="/" style={toggleStyles}>Home</NavLink>
-      <NavLink to="/signup" style={toggleStyles}>Registro</NavLink>
-      <NavLink to="/login" style={toggleStyles}>Acceso</NavLink>
+      <Link to="/">Home</Link>
+      <Link to="/signup">Registro</Link>
+      <Link to="/login">Acceso</Link>
     </nav>
   );
 }
