@@ -6,7 +6,7 @@ function PrivatePageExample() {
 
   useEffect(() => {
     getData()
-  })
+  }, [])
 
   const getData = async () => {
     try {
